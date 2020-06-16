@@ -1,0 +1,143 @@
+@import url("./normalize.css");
+
+/* Default Layout */
+body {
+  color: yellow;
+  background-color: lightsalmon;
+  font-family: 'Monteserrat', sans-serif;
+  line-height: 1.5;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a {
+  color: lightsalmon;
+  text-decoration: none;
+}
+
+/* Header&Footer Nav Layout */
+.ly_nav {
+  background-color: teal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ly_nav_inner {
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.bl_nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bl_nav_item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.bl_nav_link {
+  position: relative;
+  display: block;
+  border-bottom: 2px solid transparent;
+  transition: .25s;
+}
+
+.bl_nav_link:focus,
+.bl_nav_link:hover {
+  border-bottom-color: coral;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_nav_item {
+    width: 100%;
+  }
+}
+
+/* Main Layout */
+.ly_cont {
+  max-width: 1230px;
+  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ly_cont_intro {
+  max-width: 100%;
+  padding: 60px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.el_lv1Heading {
+  color: lightsalmon;
+  background-color: rgba(0.5, 0.5, 0.5, 0.5);
+  text-align: center;
+  max-width: 100%;
+  padding: 20px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.el_lv2Heading {
+  font-size: 2em;
+}
+
+.el_lv3Heading {
+  font-size: 1.5em;
+}
+
+.el_txt {
+  color: white;
+}
+
+.el_txtLink {
+  color:yellow;
+}
+
+.ly_cont_event {
+  max-width: 1230px;
+  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.ly_cont_event > .el_img {
+  text-align: center;
+  width: 31%;
+  margin-right: 2.4%;
+}
+
+.ly_baseColor {
+  background-color: teal !important;
+}
+
+.bl_imgWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+}
+
+.bl_imgWrapper > .el_img {
+  width: 31%;
+  margin-right: 2.4%;
+  margin-bottom: 20px;
+}
+
+.bl_imgWrapper > .el_img:nth-of-type(3) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_imgWrapper > .el_img {
+    width: 100%;
+  }
+}
